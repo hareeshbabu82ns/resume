@@ -1,0 +1,392 @@
+@import "bower_components/components-bootstrap/less/variables.less";
+
+//@section-color-primary : #E45C3F;
+@section-color-primary : #00C674;
+@border-color: #efefef;
+//@level-color: #359CBD;
+@level-color: #8168e3;
+@level-color-blue: #8238bd;
+@cv-desc-bg-color: #f5f5f5;
+//@cv-desc-bg-color: #f5f5f5;
+
+.wrap {
+  padding: 80px 80px 60px 80px;
+  margin: 80px auto;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 1px #606060;
+  box-shadow: 2px 2px 1px #606060;
+  & + .wrap {
+    margin-top: -40px;
+  }
+}
+
+.ie7 {
+  body {
+    padding: 80px 0;
+  }
+  .wrap {
+    margin: 0 auto 40px auto;
+  }
+}
+
+.ie7 .wrap, .ie8 .wrap {
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.content {
+}
+
+.logo {
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: @section-color-primary;
+  small {
+    font-weight: 300;
+    font-size: 14px;
+    color: #444;
+  }
+}
+
+.address-info {
+  padding-right: 20px;
+  border-right: 1px solid @border-color;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.contact-info {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  -webkit-padding-start: 0;
+}
+
+.cv-profile {
+  margin: 40px 0 40px 0;
+  padding: 40px 0;
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.cv-section-title {
+  color: @section-color-primary;
+  margin: 0 0 40px 0;
+  line-height: 18px;
+}
+
+.cv-item {
+  margin-bottom: 10px;
+  & + .last {
+    margin-bottom: 40px;
+  }
+  //  .panel{
+  //    margin-top: 10px;
+  //  }
+  .table {
+    font-size: 12px;
+  }
+}
+
+.cv-item-description {
+  text-align: right;
+  h6 {
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-color: @cv-desc-bg-color;
+    padding: 0 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+}
+
+.highlight {
+  background-color: #f5f5f5;
+  padding: 0 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.cv-item-details {
+  h4 {
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+  p:first-child {
+    margin-top: 10px;
+  }
+  p.margin-top {
+    margin-top: 10px;
+  }
+}
+
+.skill {
+  margin-bottom: 40px;
+  h4 {
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: right;
+    color: #aaa;
+    margin-bottom: 0;
+  }
+}
+
+.level {
+  text-indent: -9999px;
+  background-color: #e2e2e2;
+  height: 5px;
+  width: 100%;
+  margin: 5px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.level-variant(@width; @color;) {
+  width: @width;
+  display: block;
+  background-color: @color;
+  height: 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+
+.l-1 {
+  .level-variant(10%, @level-color)
+}
+
+.l-2 {
+  .level-variant(20%, @level-color)
+}
+
+.l-3 {
+  .level-variant(30%, @level-color)
+}
+
+.l-4 {
+  .level-variant(40%, @level-color)
+}
+
+.l-5 {
+  .level-variant(50%, @level-color)
+}
+
+.l-6 {
+  .level-variant(60%, @level-color)
+}
+
+.l-7 {
+  .level-variant(70%, @level-color)
+}
+
+.l-8 {
+  .level-variant(80%, @level-color)
+}
+
+.l-9 {
+  .level-variant(90%, @level-color)
+}
+
+.l-10 {
+  .level-variant(100%, @level-color)
+}
+
+.portfolio-items {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid @border-color;
+  padding: 80px 80px 70px 80px;
+  margin: 0px -80px 40px -80px;
+  h2 {
+    font-weight: 300;
+  }
+  .slides {
+    ul {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.contact-info-2 {
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+  }
+
+  .wrap {
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  body {
+  }
+
+  .wrap {
+    width: auto;
+    padding: 60px 0;
+    margin: 40px auto;
+    -webkit-box-shadow: 2px 2px 1px #606060;
+    box-shadow: 2px 2px 1px #606060;
+    & + .wrap {
+      margin-top: 0px;
+    }
+  }
+
+  .portfolio-items {
+    padding: 80px 0;
+    margin: 0 0 40px 0;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+  }
+
+  .hide-on-phone {
+    display: none;
+  }
+
+  .wrap {
+    width: auto;
+    padding: 60px 0;
+    margin: 25px auto;
+    -webkit-box-shadow: 0 0 4px #606060;
+    box-shadow: 0 0 4px #606060;
+    & + .wrap {
+      -webkit-box-shadow: 0 4px 4px -2px #606060;
+      box-shadow: 0 4px 4px -2px #606060;
+      margin-top: -180px;
+    }
+  }
+
+  .cv-profile {
+    font-size: 17px;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    li {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  .logo {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .cv-item-description {
+    text-align: left;
+    h6 {
+      padding: 10px;
+    }
+  }
+
+  .cv-item {
+    margin-bottom: 10px;
+    & + .last {
+      margin-bottom: 40px;
+    }
+  }
+
+  .cv-section-title {
+    color: @section-color-primary;
+    margin: -10px 0 40px 0;
+  }
+
+  .portfolio-items {
+    padding: 40px 0;
+    margin: 0 0 40px 0;
+  }
+
+  .skill {
+    margin-bottom: 20px;
+  }
+
+  .contact-info-2 {
+    margin-top: 20px;
+    li {
+      float: none;
+    }
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+  }
+
+  .wrap {
+    width: auto;
+  }
+
+  .portfolio-items {
+    padding: 60px 0;
+  }
+
+}
+
+@media print {
+
+  body {
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .wrap {
+    padding: 20px 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    & + .wrap {
+      margin-top: -20px;
+    }
+  }
+
+  .level {
+
+  }
+
+  .logo {
+    line-height: 24px;
+    font-size: 20px;
+    margin-top: 0;
+    small {
+      //      font-weight: 200;
+      font-size: 12px;
+    }
+  }
+
+  .cv-profile {
+    padding: 20px 0;
+    margin: 20px 0 20px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .cv-item.print-min-pad {
+    margin-bottom: 10px;
+  }
+
+  .cv-section-title{
+    font-size: 20px;
+  }
+  .cv-section-title.print-min-pad {
+    margin-bottom: 5px;
+  }
+}
